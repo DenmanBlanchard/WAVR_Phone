@@ -1,0 +1,1 @@
+cargo ndk -t arm64-v8a --platform 30 -o ..\..\app\src\main\jniLibs build -p alvr_client_core --release
