@@ -1,0 +1,6 @@
+[submodule "third_party/alvr"]
+	path = third_party/alvr
+	url = https://github.com/alvr-org/ALVR.git
+[submodule "third_party/cardboard"]
+	path = third_party/cardboard
+	url = https://github.com/googlevr/cardboard.git
