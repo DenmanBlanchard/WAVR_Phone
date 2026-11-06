@@ -184,3 +184,4 @@ fabric.properties
 !/gradle/wrapper/gradle-wrapper.jar
 
 # End of https://www.toptal.com/developers/gitignore/api/androidstudio,android,cmake
+app/src/main/jniLibs/arm64-v8a/libalvr_client_core.so
