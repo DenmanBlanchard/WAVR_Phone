@@ -77,8 +77,6 @@ message(STATUS "wavr_phone: ALVR server ${WAVR_ALVR_VERSION}, Cardboard ${WAVR_U
 # ---------------------------------------------------------------------------
 # Prebuilt libraries
 # ---------------------------------------------------------------------------
-add_library(alvr_client_core SHARED IMPORTED)
-set_target_properties(alvr_client_core PROPERTIES IMPORTED_LOCATION "${ALVR_LIBRARY}")
 
 if(WAVR_USE_CARDBOARD)
     add_library(cardboard_api SHARED IMPORTED)
@@ -113,9 +111,11 @@ if(WAVR_USE_CARDBOARD)
     target_compile_definitions(wavr_phone PRIVATE WAVR_HAS_CARDBOARD=1)
 endif()
 
+target_link_directories(wavr_phone PRIVATE "${JNILIBS_DIR}")
+
 target_link_libraries(wavr_phone
         game-activity::game-activity
-        alvr_client_core
+        alvr_client_core        # resolves to -lalvr_client_core
 
         # Rendering
         EGL
