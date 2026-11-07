@@ -18,7 +18,7 @@ android {
         externalNativeBuild {
             cmake {
                 cppFlags += "-std=c++17"
-                arguments += listOf("-DANDROID_STL=c++_shared")
+                arguments += listOf("-DANDROID_STL=c++_shared", "-DWAVR_USE_CARDBOARD=OFF")
             }
         }
         ndk {

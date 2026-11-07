@@ -3,6 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/../.." vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../../third_party/alvr" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../third_party/alvr/openvr" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../../third_party/cardboard" vcs="Git" />
   </component>
 </project>
